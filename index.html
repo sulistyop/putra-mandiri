@@ -1319,44 +1319,142 @@
     <section class="work-history" id="work-history">
       <div class="container">
         <h2 class="section-title">Portfolio Hasil Kerja Kami</h2>
-        <div class="work-item">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/0QRO3gKj3qw" title="Pemasangan Bandsaw Tongyang Baru"
-              allowfullscreen></iframe>
+        <div class="work-grid">
+          <div class="work-item">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/0QRO3gKj3qw" title="Pemasangan Bandsaw Tongyang Baru"
+                allowfullscreen></iframe>
+            </div>
+            <div class="work-content">
+              <span class="work-date">Juni 2025</span>
+              <h3 class="work-title">Pemasangan Bandsaw Tongyang Baru</h3>
+              <p class="work-description">Proses pemasangan dan setting mesin bandsaw Tongyang untuk industri furniture
+                di Solo. Hasil potong presisi, mesin berjalan halus, dan pelanggan sangat puas dengan layanan kami.</p>
+            </div>
           </div>
-          <div class="work-content">
-            <span class="work-date">Juni 2025</span>
-            <h3 class="work-title">Pemasangan Bandsaw Tongyang Baru</h3>
-            <p class="work-description">Proses pemasangan dan setting mesin bandsaw Tongyang untuk industri furniture di
-              Solo. Hasil potong presisi, mesin berjalan halus, dan pelanggan sangat puas dengan layanan kami.</p>
+          <div class="work-item">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/2QdIsg1bqkA" title="Service AS Bandsaw & Bubut"
+                allowfullscreen></iframe>
+            </div>
+            <div class="work-content">
+              <span class="work-date">Mei 2025</span>
+              <h3 class="work-title">Service AS Bandsaw & Bubut</h3>
+              <p class="work-description">Pengerjaan service AS bandsaw dan jasa bubut untuk bengkel kayu di Wonogiri.
+                Mesin kembali berfungsi optimal, waktu pengerjaan cepat, dan harga amanah.</p>
+            </div>
           </div>
-        </div>
-        <div class="work-item">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/2QdIsg1bqkA" title="Service AS Bandsaw & Bubut"
-              allowfullscreen></iframe>
-          </div>
-          <div class="work-content">
-            <span class="work-date">Mei 2025</span>
-            <h3 class="work-title">Service AS Bandsaw & Bubut</h3>
-            <p class="work-description">Pengerjaan service AS bandsaw dan jasa bubut untuk bengkel kayu di Wonogiri.
-              Mesin kembali berfungsi optimal, waktu pengerjaan cepat, dan harga amanah.</p>
-          </div>
-        </div>
-        <div class="work-item">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/1Q8fG0TtVAY" title="Perbaikan Meja Bandsaw"
-              allowfullscreen></iframe>
-          </div>
-          <div class="work-content">
-            <span class="work-date">April 2025</span>
-            <h3 class="work-title">Perbaikan & Setting Meja Bandsaw</h3>
-            <p class="work-description">Perbaikan dan setting ulang meja bandsaw untuk produksi massal di pabrik kayu.
-              Hasil potong lebih rapi dan efisien, meningkatkan produktivitas pelanggan.</p>
+          <div class="work-item">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/1Q8fG0TtVAY" title="Perbaikan Meja Bandsaw"
+                allowfullscreen></iframe>
+            </div>
+            <div class="work-content">
+              <span class="work-date">April 2025</span>
+              <h3 class="work-title">Perbaikan & Setting Meja Bandsaw</h3>
+              <p class="work-description">Perbaikan dan setting ulang meja bandsaw untuk produksi massal di pabrik kayu.
+                Hasil potong lebih rapi dan efisien, meningkatkan produktivitas pelanggan.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <style>
+      .work-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      @media (min-width: 900px) {
+        .work-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .work-item {
+          flex-direction: column;
+        }
+
+        .video-container {
+          width: 100%;
+          height: 220px;
+          min-width: unset;
+          border-radius: 15px 15px 0 0;
+        }
+
+        .video-container iframe {
+          border-radius: 15px 15px 0 0;
+        }
+
+        .work-content {
+          padding: 1.5rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .work-history {
+          padding: 2rem 0;
+        }
+
+        .work-grid {
+          gap: 1.2rem;
+        }
+
+        .work-item {
+          flex-direction: column;
+          margin-bottom: 1.2rem;
+        }
+
+        .video-container {
+          height: 160px;
+          border-radius: 15px 15px 0 0;
+        }
+
+        .video-container iframe {
+          border-radius: 15px 15px 0 0;
+        }
+
+        .work-content {
+          padding: 1rem;
+        }
+
+        .work-title {
+          font-size: 1.05rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .work-item {
+          margin-bottom: 0.7rem;
+        }
+
+        .video-container {
+          height: 110px;
+          border-radius: 12px 12px 0 0;
+        }
+
+        .video-container iframe {
+          border-radius: 12px 12px 0 0;
+        }
+
+        .work-content {
+          padding: 0.5rem;
+        }
+
+        .work-title {
+          font-size: 0.95rem;
+        }
+
+        .work-date {
+          font-size: 0.8rem;
+          padding: 0.3rem 0.7rem;
+        }
+      }
+    </style>
 
     <!-- Google Maps Embed Section -->
     <section class="maps-section">
