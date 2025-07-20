@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesin Bandsaw Berkualitas Tinggi - Tongyang | Bengkel Gergaji Putra Mandiri</title>
+  <meta name="description"
+    content="Jual Bandsaw Pandan, service, dan jasa bubut profesional. Mesin dan perawatan berkualitas untuk industri kayu dan manufaktur.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-green: #2d5a27;
+      /* Hijau tua seperti yang disukai Rasulullah */
+      --secondary-green: #48a742;
+      /* Hijau sedang */
+      --light-green: #7fb069;
+      /* Hijau muda */
+      --accent-green: #4caf50;
+      /* Hijau aksen */
+      --pure-white: #ffffff;
+      --off-white: #f8fffe;
+      --light-gray: #f5f7f6;
+      --text-dark: #1a3e1a;
+      --text-medium: #2d5a27;
+      --shadow: rgba(45, 90, 39, 0.1);
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background: var(--off-white);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      background: var(--pure-white);
+      box-shadow: 0 4px 20px var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 3px solid var(--primary-green);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: none;
+    }
+
+    .logo-img {
+      height: 48px;
+      width: 48px;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(45, 90, 39, 0.1);
+      background: var(--pure-white);
+      border: 2px solid var(--accent-green);
+      margin-right: 8px;
+      transition: box-shadow 0.3s;
+    }
+
+    .logo-img:hover {
+      box-shadow: 0 8px 32px rgba(45, 90, 39, 0.18);
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.1;
+    }
+
+    .logo-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary-green);
+      letter-spacing: 1px;
+      margin-bottom: 2px;
+      text-shadow: 0 2px 8px var(--shadow);
+    }
+
+    .logo-sub {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--accent-green);
+      letter-spacing: 0.5px;
+      margin-left: 2px;
+    }
+
+    .cta-button {
+      background: linear-gradient(45deg, var(--primary-green), var(--secondary-green));
+      color: var(--pure-white);
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px var(--shadow);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(45, 90, 39, 0.3);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+      color: var(--pure-white);
+      padding: 4rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+      opacity: 0.3;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 1s ease;
+    }
+
+    .hero .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+      animation: fadeInUp 1s ease 0.2s both;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      gap: 1rem;
+      animation: fadeInUp 1s ease 0.4s both;
+    }
+
+    .primary-btn {
+      background: var(--accent-green);
+      color: var(--pure-white);
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+      display: inline-block;
+      text-align: center;
+      white-space: normal;
+    }
+
+    @media (max-width: 768px) {
+      .primary-btn {
+        font-size: 1rem;
+        padding: 12px 10px;
+        min-width: 100%;
+        border-radius: 22px;
+        box-sizing: border-box;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .primary-btn {
+        font-size: 0.95rem;
+        padding: 10px 6px;
+        min-width: 100%;
+        border-radius: 18px;
+      }
+    }
+
+    .secondary-btn {
+      background: #25d366;
+      color: var(--pure-white);
+      padding: 15px 30px;
+      border: 2px solid var(--pure-white);
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .secondary-btn:hover {
+      background: var(--pure-white);
+      color: var(--primary-green);
+    }
+
+    /* Bismillah Section */
+    .bismillah {
+      background: var(--pure-white);
+      padding: 2rem 0;
+      text-align: center;
+      border-bottom: 2px solid var(--light-green);
+    }
+
+    .bismillah h3 {
+      font-size: 1.5rem;
+      color: var(--primary-green);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .bismillah p {
+      color: var(--text-medium);
+      font-style: italic;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 4rem 0;
+      background: var(--off-white);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: var(--primary-green);
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(45deg, var(--secondary-green), var(--accent-green));
+      border-radius: 2px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .feature-card {
+      background: var(--pure-white);
+      border-radius: 15px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 10px 30px var(--shadow);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(45, 90, 39, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(45deg, var(--secondary-green), var(--accent-green));
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(45, 90, 39, 0.2);
+    }
+
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(45deg, var(--primary-green), var(--secondary-green));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 2rem;
+      color: var(--pure-white);
+    }
+
+    /* Service Section Improvements */
+    .service-intro {
+      max-width: 700px;
+      margin: 0 auto 3rem auto;
+      text-align: center;
+      background: var(--pure-white);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px var(--shadow);
+      border-left: 5px solid var(--primary-green);
+    }
+
+    .service-intro h3 {
+      color: var(--primary-green);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .service-intro p {
+      font-size: 1.1rem;
+      color: var(--text-medium);
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .service-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      padding: 4rem 0;
+      background: var(--pure-white);
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .testimonial-card {
+      background: var(--light-gray);
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 8px 25px var(--shadow);
+      position: relative;
+      border-left: 5px solid var(--secondary-green);
+    }
+
+    .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      font-size: 4rem;
+      color: var(--secondary-green);
+      opacity: 0.3;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .author-avatar {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(45deg, var(--primary-green), var(--secondary-green));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--pure-white);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .author-info h4 {
+      color: var(--primary-green);
+      margin-bottom: 0.2rem;
+    }
+
+    .author-info p {
+      color: var(--text-medium);
+      font-size: 0.9rem;
+    }
+
+    .rating {
+      margin-top: 0.5rem;
+    }
+
+    .stars {
+      color: #ffc107;
+      font-size: 1.1rem;
+    }
+
+    /* Work History Section */
+    .work-history {
+      padding: 4rem 0;
+      background: var(--off-white);
+    }
+
+    .work-item {
+      background: var(--pure-white);
+      border-radius: 15px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+      box-shadow: 0 8px 25px var(--shadow);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      gap: 0;
+    }
+
+    .work-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(45, 90, 39, 0.15);
+    }
+
+    .video-container {
+      position: relative;
+      width: 45%;
+      min-width: 280px;
+      height: 300px;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: #000;
+    }
+
+    .work-content {
+      padding: 2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .work-date {
+      background: linear-gradient(45deg, var(--primary-green), var(--secondary-green));
+      color: var(--pure-white);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 1rem;
+      align-self: flex-start;
+    }
+
+    .work-title {
+      color: var(--primary-green);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .work-description {
+      color: var(--text-medium);
+      line-height: 1.6;
+    }
+
+    /* Responsive for Portfolio Section */
+    @media (max-width: 1024px) {
+      .work-item {
+        flex-direction: column;
+      }
+
+      .video-container {
+        width: 100%;
+        height: 260px;
+        min-width: unset;
+      }
+
+      .work-content {
+        padding: 1.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .work-history {
+        padding: 2rem 0;
+      }
+
+      .work-item {
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+      }
+
+      .video-container {
+        height: 180px;
+      }
+
+      .work-content {
+        padding: 1rem;
+      }
+
+      .work-title {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .work-item {
+        margin-bottom: 1rem;
+      }
+
+      .video-container {
+        height: 140px;
+      }
+
+      .work-content {
+        padding: 0.7rem;
+      }
+
+      .work-title {
+        font-size: 1rem;
+      }
+
+      .work-date {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.7rem;
+      }
+    }
+
+    /* Applications Section */
+    .applications {
+      padding: 4rem 0;
+      background: var(--pure-white);
+    }
+
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .app-item {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-radius: 15px;
+      background: linear-gradient(135deg, rgba(45, 90, 39, 0.05), rgba(72, 167, 66, 0.05));
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .app-item:hover {
+      background: linear-gradient(135deg, rgba(45, 90, 39, 0.1), rgba(72, 167, 66, 0.1));
+      transform: translateY(-5px);
+      border-color: var(--light-green);
+    }
+
+    .app-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 4rem 0;
+      background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+      color: var(--pure-white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+
+    .contact-info {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--accent-green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .phone-number {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--accent-green);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .phone-number:hover {
+      color: var(--pure-white);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--text-dark);
+      color: var(--pure-white);
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 3px solid var(--primary-green);
+    }
+
+    /* Contact Section Customization */
+    .contact {
+      padding: 4rem 0;
+      background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+      color: var(--pure-white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+
+    .contact-info {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 2rem;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 4px 20px var(--shadow);
+      color: var(--pure-white);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--accent-green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem;
+      font-size: 1.5rem;
+      color: var(--pure-white);
+    }
+
+    .phone-number {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--accent-green);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      background: var(--pure-white);
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      display: inline-block;
+    }
+
+    .phone-number:hover {
+      color: var(--pure-white);
+      background: var(--accent-green);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeInUp 1s ease;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .phone-number {
+        font-size: 1.4rem;
+      }
+
+      .service-buttons {
+        flex-direction: column;
+      }
+
+      .primary-btn,
+      .secondary-btn {
+        min-width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: var(--pure-white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+      z-index: 1000;
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+      }
+
+      50% {
+        box-shadow: 0 4px 25px rgba(37, 211, 102, 0.5);
+      }
+
+      100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+      }
+    }
+
+    /* Custom Styles for New Sections */
+    .maps-section {
+      padding: 4rem 0;
+      background: var(--off-white);
+    }
+
+    /* Portfolio Section */
+    .work-history {
+      padding: 4rem 0;
+      background: var(--off-white);
+    }
+
+    .work-item {
+      background: var(--pure-white);
+      border-radius: 15px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+      box-shadow: 0 8px 25px var(--shadow);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      gap: 0;
+    }
+
+    .work-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(45, 90, 39, 0.15);
+    }
+
+    .video-container {
+      position: relative;
+      width: 45%;
+      min-width: 280px;
+      height: 300px;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: #000;
+    }
+
+    .work-content {
+      padding: 2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .work-date {
+      background: linear-gradient(45deg, var(--primary-green), var(--secondary-green));
+      color: var(--pure-white);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 1rem;
+      align-self: flex-start;
+    }
+
+    .work-title {
+      color: var(--primary-green);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .work-description {
+      color: var(--text-medium);
+      line-height: 1.6;
+    }
+
+    /* Google Maps Embed Section */
+    .maps-section {
+      padding: 4rem 0;
+      background: var(--off-white);
+    }
+
+    .maps-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--primary-green);
+    }
+
+    .maps-section iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(45, 90, 39, 0.1);
+    }
+
+    /* FAQ Section Styling */
+    .specifications {
+      padding: 4rem 0;
+      background: var(--off-white);
+    }
+
+    .spec-grid {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .spec-item {
+      background: var(--pure-white);
+      border-radius: 12px;
+      box-shadow: 0 4px 16px var(--shadow);
+      padding: 2rem;
+      transition: box-shadow 0.3s;
+      border-left: 5px solid var(--accent-green);
+    }
+
+    .spec-item:hover {
+      box-shadow: 0 8px 32px rgba(45, 90, 39, 0.18);
+    }
+
+    .spec-label {
+      font-weight: bold;
+      color: var(--primary-green);
+      font-size: 1.1rem;
+      margin-bottom: 0.7rem;
+      display: block;
+    }
+
+    .spec-item div:not(.spec-label) {
+      color: var(--text-medium);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .specifications {
+        padding: 2rem 0;
+      }
+
+      .spec-grid {
+        gap: 1.2rem;
+      }
+
+      .spec-item {
+        padding: 1.2rem;
+      }
+
+      .spec-label {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .spec-item {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+      }
+
+      .spec-label {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <img src="gambar/logo.png" alt="Putra Mandiri Logo" class="logo-img">
+            <div class="logo-text">
+              <span class="logo-title">Bengkel Gergaji</span>
+              <span class="logo-sub">Putra Mandiri</span>
+            </div>
+          </div>
+          <a href="tel:628122594429" class="cta-button" style="text-align: center;">💰 Dapatkan Harga Terbaik</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Mesin Bandsaw Tongyang Original - Garansi Kualitas Industri</h1>
+          <p class="subtitle">Tingkatkan Produktivitas 40% dengan Mesin Bandsaw Terpercaya. 10+ Tahun Melayani 500+
+            Industri Kayu Se-Jawa Tengah</p>
+          <div class="hero-cta">
+            <a href="tel:628122594429" class="primary-btn" style="text-align: center;">💰 Dapatkan Harga Terbaik
+              Sekarang</a>
+            <a href="#specifications" class="secondary-btn">Lihat Testimoni Customer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Signals -->
+    <section class="features">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:3rem;">
+          <h2 style="color:#ff6b6b;margin-bottom:1rem;">✅ Dipercaya 500+ Pengusaha Kayu Sejak 2014</h2>
+          <div style="display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;font-weight:bold;color:#667eea;">
+            <span>🏆 Teknisi Profesional Tongyang</span>
+            <span>⭐ Rating 4.8/5</span>
+            <span>🛡️ Garansi </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Mengapa 500+ Pengusaha Memilih Kami?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <h3>ROI Terbukti</h3>
+            <p>Hemat biaya operasional hingga 30% dengan mesin bandsaw Tongyang yang tahan lama. <strong>Investasi
+                sekali, untung bertahun-tahun.</strong></p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⭐</div>
+            <h3>Kualitas Terjamin</h3>
+            <p>Mesin bandsaw original Tongyang dengan sertifikat resmi. <strong>Tidak ada yang palsu atau KW.</strong>
+              Performa industri yang konsisten.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Garansi 100% Uang Kembali</h3>
+            <p>Tidak puas dengan performa mesin dalam 7 hari? <strong>Uang kembali 100%!</strong> Kami yakin dengan
+              kualitas produk kami.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Stock Terbatas</h3>
+            <p>Hanya tersedia <strong>8 unit per bulan</strong> untuk menjaga kualitas service. Pesan sekarang sebelum
+              kehabisan!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="specifications">
+      <div class="container">
+        <h2 class="section-title">🔥 Harga Khusus Bulan Ini</h2>
+        <div
+          style="max-width:800px;margin:0 auto;text-align:center;background:white;padding:2rem;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,0.1);border:3px solid #ff6b6b;">
+          <h3 style="color:#ff6b6b;margin-bottom:2rem;font-size:1.5rem;">⚡ PROMO BERAKHIR 31 JANUARI 2025!</h3>
+          <div
+            style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-bottom:2rem;">
+            <div style="border:2px solid #667eea;padding:1.5rem;border-radius:10px;">
+              <h4 style="color:#667eea;margin-bottom:1rem;">Mesin Bandsaw BARU</h4>
+              <div style="font-size:2rem;font-weight:bold;color:#ff6b6b;margin-bottom:1rem;">Mulai Rp 25 Juta</div>
+              <ul style="text-align:left;color:#333;">
+                <li>✅ Mesin 100% baru & original</li>
+                <li>✅ Garansi resmi 1 tahun</li>
+                <li>✅ Training operator gratis</li>
+                <li>✅ Free ongkir se-Jateng</li>
+              </ul>
+            </div>
+            <div style="border:2px solid #28a745;padding:1.5rem;border-radius:10px;">
+              <h4 style="color:#28a745;margin-bottom:1rem;">Mesin Bandsaw BERKUALITAS</h4>
+              <div style="font-size:2rem;font-weight:bold;color:#ff6b6b;margin-bottom:1rem;">Mulai Rp 15 Juta</div>
+              <ul style="text-align:left;color:#333;">
+                <li>✅ Kondisi 85-90% seperti baru</li>
+                <li>✅ Quality check 15 poin</li>
+                <li>✅ Garansi 6 bulan</li>
+                <li>✅ Cicilan 0% tersedia</li>
+              </ul>
+            </div>
+          </div>
+          <div style="background:#fff3cd;padding:1rem;border-radius:8px;margin-bottom:2rem;">
+            <strong>🎁 BONUS KHUSUS: </strong>Spare part senilai Rp 2 juta untuk 10 pembeli pertama!
+          </div>
+          <a href="tel:628122594429" class="primary-btn">📞 HUBUNGI SEKARANG
+            - Konsultasi Gratis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="features" id="specifications">
+      <div class="container">
+        <h2 class="section-title">Apa Kata Customer Kami?</h2>
+        <div class="features-grid">
+          <div class="feature-card" style="background:#f8f9fa;">
+            <div style="color:#ffc107;font-size:1.5rem;margin-bottom:1rem;">⭐⭐⭐⭐⭐</div>
+            <p style="font-style:italic;margin-bottom:1rem;">"Sejak pakai bandsaw Tongyang dari Putra Mandiri,
+              produktivitas naik 45%. Servicenya juga cepat, kalau ada masalah langsung ditangani."</p>
+            <strong>- Pak Bambang, Owner CV. Kayu Jati Wonogiri</strong>
+          </div>
+          <div class="feature-card" style="background:#f8f9fa;">
+            <div style="color:#ffc107;font-size:1.5rem;margin-bottom:1rem;">⭐⭐⭐⭐⭐</div>
+            <p style="font-style:italic;margin-bottom:1rem;">"Sudah 5 tahun pakai mesin dari sini, belum pernah rusak
+              parah. Investasi yang tepat untuk bisnis furniture saya!"</p>
+            <strong>- Ibu Sari, Pengusaha Furniture Klaten</strong>
+          </div>
+          <div class="feature-card" style="background:#f8f9fa;">
+            <div style="color:#ffc107;font-size:1.5rem;margin-bottom:1rem;">⭐⭐⭐⭐⭐</div>
+            <p style="font-style:italic;margin-bottom:1rem;">"Pelayanan profesional, harga transparan. Tidak ada biaya
+              tersembunyi. Recommended banget!"</p>
+            <strong>- Pak Andi, Bengkel Kayu Surakarta</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Section -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Solusi Lengkap Bandsaw - Dari Penjualan hingga After Sales</h2>
+        <div style="max-width:700px;margin:0 auto 2rem auto;text-align:center;">
+          <h3 style="color:#ff6b6b;margin-bottom:1rem;">Tidak Perlu Cari Tempat Lain. Satu Tempat untuk Semua Kebutuhan
+            Bandsaw Anda</h3>
+          <p style="font-size:1.15rem;color:#333;margin-bottom:2rem;">Tim teknisi berpengalaman 15+ tahun siap menangani
+            semua masalah bandsaw Anda. Spare part original, hasil presisi, garansi terpercaya.</p>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;">
+            <a href="tel:628122594429" class="primary-btn" style="min-width:220px;">📞 Konsultasi Gratis Sekarang</a>
+            <a href="https://wa.me/628122594429?text=Halo,%20saya%20butuh%20konsultasi%20untuk%20bandsaw%20saya"
+              class="secondary-btn" style="min-width:220px;">💬 Chat WhatsApp</a>
+          </div>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <a href="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
+              class="lightbox-link"><img
+                src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+                alt="Jasa Bubut"
+                style="width:100%;height:220px;object-fit:cover;margin-bottom:1rem;border-radius:8px;"></a>
+            <h3>Komponen Rusak? Kami Bubut Ulang Seperti Baru</h3>
+            <p>Hemat 60% dibanding beli komponen baru. Dikerjakan teknisi berpengalaman 15+ tahun. <strong>Hasil presisi
+                ±0.01mm.</strong></p>
+            <a href="tel:628122594429" class="primary-btn" style="margin-top:1rem;display:inline-block;">💬 Konsultasi
+              Gratis</a>
+          </div>
+          <div class="feature-card">
+            <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+              class="lightbox-link"><img
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+                alt="AS Bandsaw"
+                style="width:100%;height:220px;object-fit:cover;margin-bottom:1rem;border-radius:8px;"></a>
+            <h3>AS Bandsaw Bermasalah? Kami Perbaiki dalam 24 Jam</h3>
+            <p>Jangan biarkan produksi terhenti. <strong>Service cepat dengan spare part original Tongyang.</strong>
+              Emergency service tersedia.</p>
+            <a href="https://wa.me/628122594429?text=Halo,%20saya%20butuh%20emergency%20service%20AS%20Bandsaw"
+              class="secondary-btn" style="margin-top:1rem;display:inline-block;">📞 Call Emergency Service</a>
+          </div>
+          <div class="feature-card">
+            <a href="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
+              class="lightbox-link"><img
+                src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+                alt="Roda Bandsaw"
+                style="width:100%;height:220px;object-fit:cover;margin-bottom:1rem;border-radius:8px;"></a>
+            <h3>Roda Bandsaw Aus? Ganti dengan Yang Lebih Tahan Lama</h3>
+            <p>Roda berkualitas tinggi yang <strong>tahan hingga 3x lebih lama</strong> dari roda biasa. Investasi yang
+              menguntungkan.</p>
+            <a href="tel:628122594429" class="primary-btn" style="margin-top:1rem;display:inline-block;">🚚 Order &
+              Kirim
+              Hari Ini</a>
+          </div>
+          <div class="feature-card">
+            <a href="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80"
+              class="lightbox-link"><img
+                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
+                alt="Meja Bandsaw"
+                style="width:100%;height:220px;object-fit:cover;margin-bottom:1rem;border-radius:8px;"></a>
+            <h3>Service Meja Bandsaw untuk Hasil Potong Presisi</h3>
+            <p>Pemasangan dan perbaikan meja bandsaw untuk <strong>hasil potong yang presisi dan aman</strong> digunakan
+              setiap hari.</p>
+            <a href="https://wa.me/628122594429?text=Halo,%20saya%20butuh%20service%20Meja%20Bandsaw"
+              class="secondary-btn" style="margin-top:1rem;display:inline-block;">💬 Chat Service Meja</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="specifications">
+      <div class="container">
+        <h2 class="section-title">Pertanyaan yang Sering Ditanyakan</h2>
+        <div class="spec-grid">
+          <div class="spec-item">
+            <div class="spec-label">Q: Apakah mesin second masih bagus?</div>
+            <div>A: Semua mesin second telah melalui quality check 15 poin. Kondisi 85-90% seperti baru dengan garansi
+              resmi.</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Q: Berapa lama pengiriman ke luar kota?</div>
+            <div>A: Pengiriman ke seluruh Jawa 2-3 hari, luar Jawa 4-7 hari kerja. Gratis ongkir untuk Jawa Tengah.
+            </div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Q: Ada cicilan?</div>
+            <div>A: Ya, tersedia cicilan 0% untuk 6-12 bulan dengan syarat mudah. Cukup KTP dan slip gaji.</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Q: Bagaimana jika mesin rusak?</div>
+            <div>A: Garansi resmi 1 tahun untuk mesin baru, 6 bulan untuk second. Service panggilan tersedia.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="applications">
+      <div class="container">
+        <h2 class="section-title">Cocok Untuk Berbagai Industri</h2>
+        <div class="app-grid">
+          <div class="app-item">
+            <div class="app-icon">🌳</div>
+            <h3>Industri Kayu</h3>
+            <p>Pemotongan kayu presisi untuk furniture, konstruksi, dan kerajinan. Tingkatkan kapasitas produksi hingga
+              40%.</p>
+          </div>
+          <div class="app-item">
+            <div class="app-icon">🏭</div>
+            <h3>Industri Manufaktur</h3>
+            <p>Produksi massal dengan standar kualitas industri yang konsisten. Hemat biaya operasional jangka panjang.
+            </p>
+          </div>
+          <div class="app-item">
+            <div class="app-icon">🏠</div>
+            <h3>Bengkel Kayu</h3>
+            <p>Untuk UMKM dan bengkel kecil yang ingin meningkatkan kualitas dan kecepatan pekerjaan.</p>
+          </div>
+          <div class="app-item">
+            <div class="app-icon">🪵</div>
+            <h3>Sawmill</h3>
+            <p>Pengolahan kayu gelondongan menjadi papan dengan efisiensi tinggi dan waste minimal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="hero" style="padding:3rem 0;">
+      <div class="container">
+        <div class="hero-content">
+          <h2 style="margin-bottom:1rem;">🚨 Jangan Tunda Lagi! Competitor Anda Sudah Mulai Menggunakan Mesin Ini</h2>
+          <p class="subtitle" style="margin-bottom:2rem;">Dalam bisnis kayu, yang cepat bertindak yang menang. Sementara
+            Anda masih berpikir, competitor sudah meningkatkan kapasitas produksi mereka. <strong>Hari ini adalah hari
+              terbaik untuk upgrade mesin Anda.</strong></p>
+          <div class="hero-cta">
+            <a href="tel:628122594429" class="primary-btn" style="font-size:1.2rem;padding:18px 35px;">📞 HUBUNGI
+              SEKARANG - Konsultasi Gratis</a>
+          </div>
+          <p style="margin-top:1rem;font-size:0.9rem;opacity:0.9;">Tim expert kami siap membantu Anda memilih mesin yang
+            tepat untuk bisnis Anda.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="container">
+        <h2 class="section-title" style="color: white;">Hubungi Kami Sekarang</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3 style="margin-bottom: 2rem;">Informasi Kontak</h3>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div>Telepon / WhatsApp</div>
+                <a href="tel:628122594429" class="phone-number">0812-2594-429</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div><strong>BENGKEL GERGAJI PUTRA MANDIRI</strong></div>
+                <div>Lemah Ireng, Bulusulur</div>
+                <div>Kec. Wonogiri, Kab. Wonogiri</div>
+                <div>Jawa Tengah 57615</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">⏰</div>
+              <div>
+                <div>Jam Operasional</div>
+                <div>Senin - Sabtu: 08.00 - 17.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info">
+            <h3 style="margin-bottom: 2rem;">Dapatkan Penawaran Terbaik!</h3>
+            <p style="margin-bottom: 2rem;">Hubungi kami sekarang untuk mendapatkan informasi lengkap mengenai harga,
+              spesifikasi detail, dan penawaran khusus untuk mesin bandsaw Tongyang. <strong>Konsultasi gratis dengan
+                expert kami!</strong></p>
+            <div style="text-align: center;">
+              <a href="tel:628122594429" class="primary-btn" style="display: inline-block; margin-bottom: 1rem;">📞
+                Telepon Langsung</a>
+              <br>
+              <a href="https://wa.me/628122594429?text=Halo,%20saya%20butuh%20mesin%20bandsaw%20Tongyang%20untuk%20[sebutkan%20kebutuhan].%20Bisa%20minta%20rekomendasi%20dan%20harga%20terbaiknya?"
+                class="secondary-btn" style="display: inline-block;">💬 Chat WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="work-history" id="work-history">
+      <div class="container">
+        <h2 class="section-title">Portfolio Hasil Kerja Kami</h2>
+        <div class="work-item">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/0QRO3gKj3qw" title="Pemasangan Bandsaw Tongyang Baru"
+              allowfullscreen></iframe>
+          </div>
+          <div class="work-content">
+            <span class="work-date">Juni 2025</span>
+            <h3 class="work-title">Pemasangan Bandsaw Tongyang Baru</h3>
+            <p class="work-description">Proses pemasangan dan setting mesin bandsaw Tongyang untuk industri furniture di
+              Solo. Hasil potong presisi, mesin berjalan halus, dan pelanggan sangat puas dengan layanan kami.</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/2QdIsg1bqkA" title="Service AS Bandsaw & Bubut"
+              allowfullscreen></iframe>
+          </div>
+          <div class="work-content">
+            <span class="work-date">Mei 2025</span>
+            <h3 class="work-title">Service AS Bandsaw & Bubut</h3>
+            <p class="work-description">Pengerjaan service AS bandsaw dan jasa bubut untuk bengkel kayu di Wonogiri.
+              Mesin kembali berfungsi optimal, waktu pengerjaan cepat, dan harga amanah.</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/1Q8fG0TtVAY" title="Perbaikan Meja Bandsaw"
+              allowfullscreen></iframe>
+          </div>
+          <div class="work-content">
+            <span class="work-date">April 2025</span>
+            <h3 class="work-title">Perbaikan & Setting Meja Bandsaw</h3>
+            <p class="work-description">Perbaikan dan setting ulang meja bandsaw untuk produksi massal di pabrik kayu.
+              Hasil potong lebih rapi dan efisien, meningkatkan produktivitas pelanggan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Maps Embed Section -->
+    <section class="maps-section">
+      <div class="container">
+        <h2 class="section-title">Lokasi Bengkel Kami</h2>
+        <div
+          style="width:100%;max-width:800px;margin:0 auto;box-shadow:0 8px 32px rgba(45,90,39,0.10);border-radius:16px;overflow:hidden;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.661964073624!2d110.9281233153347!3d-7.825604779882782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bb0e2e2e2e2e3%3A0x2e2e2e2e2e2e2e2e!2sBengkel%20Gergaji%20Putra%20Mandiri!5e0!3m2!1sid!2sid!4v1689999999999!5m2!1sid!2sid"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Bengkel Gergaji Putra Mandiri. Solusi Terpercaya Untuk Kebutuhan Mesin Bandsaw Anda. | Melayani
+          Seluruh Indonesia</p>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/628122594429?text=Halo,%20saya%20tertarik%20dengan%20mesin%20bandsaw%20Tongyang%20yang%20Anda%20jual.%20Bisa%20minta%20informasi%20harga%20dan%20spesifikasinya?"
+      class="whatsapp-float" target="_blank">
+      💬
+    </a>
+
+    <script>
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Add fade-in animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+
+      // Observe all cards and sections
+      document.querySelectorAll('.feature-card, .spec-item, .app-item').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'all 0.6s ease';
+        observer.observe(el);
+      });
+
+      // Click tracking for analytics (Google Ads conversion tracking)
+      document.querySelectorAll('a[href^="tel:"], a[href^="https://wa.me/"]').forEach(link => {
+        link.addEventListener('click', function () {
+          // Track conversion for Google Ads
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL' // Replace with actual conversion ID
+            });
+          }
+
+          // Track with Google Analytics
+          if (typeof ga !== 'undefined') {
+            ga('send', 'event', 'Contact', 'Click', this.href.includes('tel:') ? 'Phone' : 'WhatsApp');
+          }
+        });
+      });
+
+      // Lightbox untuk gambar layanan
+      document.querySelectorAll('.lightbox-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const imgSrc = this.getAttribute('href');
+          const lightboxBg = document.createElement('div');
+          lightboxBg.style.position = 'fixed';
+          lightboxBg.style.top = '0';
+          lightboxBg.style.left = '0';
+          lightboxBg.style.width = '100vw';
+          lightboxBg.style.height = '100vh';
+          lightboxBg.style.background = 'rgba(0,0,0,0.8)';
+          lightboxBg.style.display = 'flex';
+          lightboxBg.style.alignItems = 'center';
+          lightboxBg.style.justifyContent = 'center';
+          lightboxBg.style.zIndex = '9999';
+          lightboxBg.innerHTML = `<img src="${imgSrc}" style="max-width:90vw;max-height:80vh;border-radius:12px;box-shadow:0 8px 40px rgba(0,0,0,0.5);">`;
+          document.body.appendChild(lightboxBg);
+          lightboxBg.addEventListener('click', function () {
+            document.body.removeChild(lightboxBg);
+          });
+        });
+      });
+    </script>
+  </body>
+
+</html>
